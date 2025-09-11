@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Dynamic Web Fundamentals - Olassignibo Luc Bamigbola</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals student profile for Olassignibo Luc Bamigbola. Learn about Luc's journey into backend development, his background in Benin, and explore curated web development resources and final project preview.">
+
+  <meta name="author" content="Olassignibo Luc Bamigbola">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css" />
+  <script src="getdates.js" defer></script>
 </head>
 <body>
-    <h1> WDD 131 - Bamigbola</h1>
+  <header>
+    <span id="course-title">WDD 131 - Dynamic Web Fundamentals - Olassignibo Luc Bamigbola</span>
+    <nav>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/bamigbola-luc-12186629b/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a></li>
+        <li><a href="final-project/index.html" target="_blank">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Olassignibo Luc Bamigbola</h1>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <img src="images/profile.jpg" alt="Luc Bamigbola profile photo" width="300">
+      <p>Hello! I'm Luc, based in Porto-Novo, Benin. I'm transitioning into backend software engineering from mobile banking and client relations. I love learning, mentoring, and building secure transaction systems.</p>
+    </section>
+
+    <section class="card">
+      <h2>Benin, West Africa</h2>
+      <img src="images/beninflag.jpg" alt="Flag of Benin" width="150">
+      <p>Benin is a vibrant country in West Africa known for its rich history, diverse cultures, and growing tech community. I'm proud to be part of this wave of innovation and learning.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Olassignibo Luc Bamigbola, Benin</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script>
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+  </script>
 </body>
 </html>
+    
+
+    
