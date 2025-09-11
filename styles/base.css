@@ -3,31 +3,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f4f4f9;
   color: #333;
   line-height: 1.6;
 }
+
 header {
   background-color: #1e2a38;
   color: #fff;
   padding: 1rem;
   text-align: center;
 }
+
 #course-title {
   display: block;
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
+
 nav ul {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 10rem;
   list-style: none;
   padding: 0.5rem 0;
 }
+
 nav a {
   color: #fff;
   text-decoration: none;
@@ -36,12 +41,14 @@ nav a {
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
-nav a:hover {
+nav a:hover,
+nav a:focus {
   background-color: #00aaff;
   color: #fff;
+  outline: none;
 }
 main {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -51,18 +58,36 @@ main h1 {
   text-align: center;
   margin-bottom: 2rem;
 }
-/* .card-container {
+.card-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-} */
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+.right-column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.right-column .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
 .card {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #1e2a38;
   border-radius: 8px;
   padding: 1rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-   margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 .card h2 {
   font-family: 'Poppins', sans-serif;
@@ -73,12 +98,28 @@ main h1 {
   max-width: 10%;
   height: auto;
   border-radius: 6px;
-  margin-bottom: 1rem;
   display: block;
   margin: 0 auto 1rem;
 }
 .card p {
   text-align: center;
+}
+.card ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.card ul li {
+  margin: 0.5rem 0;
+}
+.card ul a {
+  color: #1e2a38;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.card ul a:hover {
+  color: #00aaff;
 }
 footer {
   background-color: #1e2a38;
@@ -90,3 +131,8 @@ footer {
 footer p {
   margin: 0.5rem 0;
 }
+
+
+
+
+
