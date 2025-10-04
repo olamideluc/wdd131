@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beautiful Benin</title>
+  <meta name="description" content="Showcasing wonderful features about a country in West Africa known as Benin, built by Olassignibo Luc Bamigbola for WDD 131.">
+  <meta name="author" content="Olassignibo Luc Bamigbola">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css" />
+  <link rel="stylesheet" href="styles/place-large.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Benin Republic</h1>
+  </header>
+
+  <section class="hero">
+    <picture>
+      <source srcset="images/hero-small.webp" media="(max-width: 600px)">
+      <source srcset="images/hero-medium.webp" media="(max-width: 1024px)">
+      <img src="images/hero-large.webp" alt="Scenic view of Benin's landscape" />
+    </picture>
+
+    <div class="overlay">
+      <section id="data" aria-labelledby="data-title">
+        <h2 id="data-title">Data</h2>
+        <p><strong>Area:</strong> 114,760 km²</p>
+        <p><strong>Population:</strong> 13 million</p>
+        <p><strong>Capital:</strong> Porto-Novo</p>
+        <p><strong>Languages:</strong> French, Yoruba, Fon</p>
+        <p><strong>Currency:</strong> FCFA</p>
+        <p><strong>Time Zone:</strong> UTC+1</p>
+        <p><strong>Calling code:</strong> +229</p>
+        <p><strong>Internet TLD:</strong> .bj</p>
+      </section>
+
+      <section id="weather" aria-labelledby="weather-title">
+        <h2 id="weather-title" class="desktop-weather-heading">Weather</h2>
+        <img src="images/weather-icon.svg" alt="Sunny weather icon" class="mobile-weather-icon" />
+        <p><strong>Temperature:</strong> 29°C</p>
+        <p><strong>Conditions:</strong> Tropical climate</p>
+        <p><strong>Wind:</strong> 10 km/h</p>
+        <p><strong>Wind Chill:</strong> <span id="windchill">Calculating...</span></p>
+      </section>
+    </div>
+  </section>
+
+  <footer>
+    <p id="footer-text">© 2025 Luc Bamigbola — Porto-Novo, Benin — Last modified: Oct 1, 2025</p>
+  </footer>
+
+</body>
+</html>
